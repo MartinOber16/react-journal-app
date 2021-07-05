@@ -2,9 +2,9 @@ import cloudinary from 'cloudinary';
 import { fileUpload } from '../../helpers/fileUpload';
 
 cloudinary.config({ 
-    cloud_name: 'dfoydewqq', 
-    api_key: '475635351394693', 
-    api_secret: 'sedrUf7LKorM_QeDVXtHtpA4tJo',
+    cloud_name: process.env.REACT_APP_CLOUDNAME, 
+    api_key: REACT_APP_CLOUDAPIKEY, 
+    api_secret: REACT_APP_CLOUDAPISECRET,
     secure: true
   });
 
